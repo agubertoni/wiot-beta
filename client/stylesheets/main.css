@@ -1,0 +1,78 @@
+/* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: #FFFFFF;
+}
+
+body {
+  position: relative;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+div#sign-in-item {
+  text-align: center;
+}
+
+button#sign-in {
+  margin-top: 0.313em;
+}
+
+.flash, .flash-modal {
+  display: none;
+  border-radius: 0.313em;
+}
+
+.form-row {
+  padding-top: 0.313em;
+  padding-bottom: 0.313em;
+}
+
+/* meal options */
+.up-vote, .down-vote {
+  float: left;
+}
+
+.up-vote:hover {
+  color: #47A447;
+}
+
+.down-vote:hover {
+  color: #F0AD4E;
+}
+
+.options {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.option-name {
+  margin-left: -1.563em;
+}
+
+.option span {
+  margin-top: 0.188em;
+}
+
+.remove-option {
+  float: right;
+}
+
+.remove-option:hover {
+  color: #D9534F;
+}
+
+.circular {
+  border-radius: 150px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+}
+

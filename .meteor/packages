@@ -1,0 +1,15 @@
+# Meteor packages used by this project, one per line.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+standard-app-packages
+insecure
+accounts-base
+accounts-password
+mrt:cron@0.0.1
+tmeasday:gravatar@0.0.4
+iron:router
+
+highcharts:highcharts-meteor
+highcharts-container

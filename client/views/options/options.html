@@ -1,0 +1,29 @@
+<template name="options">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <ul class="options list-group">
+        {{ #each options }}
+          {{> option }}
+        {{ else }}
+          <li class="option list-group-item">No Options Provided!</li>
+        {{ /each }}
+      </ul>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</template>
+
+<template name="option">
+  <li class="option list-group-item" id="{{ _id }}">
+    {{ #if currentUser }}
+    <span class="up-vote glyphicon glyphicon-arrow-up"></span>
+    <span class="down-vote glyphicon glyphicon-arrow-down"></span>
+    {{ /if }}
+    <span class="option-name">{{ name }}</span>
+    <span class="badge">{{ votes }}</span>
+    {{ #if currentUser }}
+    <span class="remove-option glyphicon glyphicon-remove"></span>
+    {{ /if }}
+  </li>
+</template>
